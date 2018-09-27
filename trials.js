@@ -103,9 +103,18 @@ if (balance < 0 ){
 
 
 // Add function to show transactions
-function showBalanceStatus(balance){
-  
+function showTransactions(begin_bal,transactions){
+
+  console.log('starting bal: $',begin_bal);
+  let value = begin_bal
+
+  for (let keyValue of transactions){
+    console.log(keyValue[0], keyValue[1], value = value + keyValue[1]);
+  }
+
+
 }
+showTransactions(26000,accountTransaction);
 
 // ///////////////////////////////////////////////////////
 // All Customer Info:
